@@ -1,6 +1,10 @@
 # 시각장애인을_위한_지능형_도보_내비게이션
 
 ## 0. Summary
+
+### 🎯 Overview
+
+
 ### 🛠 개발 환경 및 Architecture
 * **Target Board**: Basys3 (Xilinx Artix-7)
 * **Camera Module**: OV7670
