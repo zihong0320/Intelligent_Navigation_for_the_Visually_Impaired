@@ -138,26 +138,26 @@
 
 ### 4.2 Real-Detection Examples
 
-| Station Shelter & Manhole 탐지 | 비 오는 밤, 빨간 신호등 탐지 | 저녁 도심, 다중 위치 객체 탐지 |
+| **Station Shelter & Manhole 탐지** | **비 오는 밤, 빨간 신호등 탐지** | **저녁 도심, 다중 위치 객체 탐지** |
 | :---: | :---: | :---: |
 | <img src="https://github.com/user-attachments/assets/eb6140d1-7ca1-4a62-a355-9be0620ff928" width="100%"/> | <img src="https://github.com/user-attachments/assets/0387bdd9-c4cc-44d0-8145-c3951c4dc1f8" width="100%"/> | <img src="https://github.com/user-attachments/assets/50c55d92-f977-4f09-99d3-50d9efb1ef9a" width="100%"/> |
-| **버스 정류장 및 맨홀 실시간 감지** | **야간/우천 시 신호등 상태 감지** | **왼쪽/정면/오른쪽 객체들 탐지** |
+| 버스 정류장 및 맨홀 실시간 감지 | 야간/우천 시 신호등 상태 감지 | 왼쪽/정면/오른쪽 객체들 탐지 |
 
 #### 4.2-1 Real Detection 필요 설정 사항
 
-| Ollama On (서버 구동) | USB Speaker Connect | Bluetooth Speaker Connect |
+| **Ollama On (서버 구동)** | **USB Speaker Connect** | **Bluetooth Speaker Connect** |
 | :---: | :---: | :---: |
 | <img src="https://github.com/user-attachments/assets/9680c06e-c288-4fd9-b5bd-20792b11d8b9" width="100%"/> | <img src="https://github.com/user-attachments/assets/e2170063-ee47-4cc5-bd7f-70dafb55ecd2" width="100%"/> | <img src="https://github.com/user-attachments/assets/b52b64c7-8203-45f7-8348-a8e52349f2b2" width="100%"/> |
-| **Ollama 서비스 백그라운드 구동** | **USB 오디오 포트 연결 확인** | **블루투스 오디오 디바이스 페어링** |
+| Ollama 서비스 백그라운드 구동 | USB 오디오 포트 연결 확인 | 블루투스 오디오 디바이스 페어링 |
 
 ---
 
 ### 4.3 한계점 및 아쉬운 점
 
-| 표지판 오인식 사례 | 오르막길/내리막길 경사 판단 한계 |
+| **표지판 오인식 사례** | **오르막길/내리막길 경사 판단 한계** |
 | :---: | :---: |
 | <img src="https://github.com/user-attachments/assets/7810704d-c829-4b50-bfd6-a419fc7b1987" width="100%"/> | <img src="https://github.com/user-attachments/assets/7cf21205-7d61-45cf-a49b-4a8fa01bf434" width="100%"/> |
-| **일반 표지판을 정지(STOP) 표지판으로 오인식** | **2D 카메라 프레임 특성상 지형 경사도 미세 구분 아쉬움** |
+| 일반 표지판을 정지(STOP) 표지판으로 오인식 | 2D 카메라 프레임 특성상 지형 경사도 미세 구분 아쉬움 |
 
 1. **사물 오인식 문제**: 유사 형태의 객체(예: 일반 표지판을 정지 표지판으로 잘못 인식)에 대한 오인식 사례 존재
 2. **지형 변화 인식 한계**: 오르막길, 내리막길 등 3차원 경사도 변화에 대한 미세한 판단 정확도 보완 필요
