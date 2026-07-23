@@ -37,7 +37,7 @@
 
 ---
 
-## 1. Introduction
+## 📚 1. Introduction
 
 ### 1.1 YOLO (You Only Look Once)
 이미지 전체를 한 번에 확인하여 객체의 위치(Bounding Box)와 클래스(Class)를 동시에 추론하는 고속 실시간 객체 탐지 인공지능 모델입니다. 본 프로젝트에서는 TensorRT 엔진 변환을 통해 온디바이스 환경에서 초고속 추론을 수행합니다.
@@ -47,7 +47,7 @@
 
 ---
 
-## 2. System Specification
+## ⚙️ 2. Specification
 
 ### 2.1 Hardware Specification
 
@@ -71,12 +71,12 @@
 
 ---
 
-## 3. Skill & Pipeline
+## 🛠️ 3. Skill & Data Flow
 
 ### 3.1 Project Dataflow
 
 <p align="center">
-  <img width="90%" alt="Project Dataflow" src="https://github.com/user-attachments/assets/7b29a5f4-5bbd-48a2-be6d-724128b30af8" />
+  <img width="85%" alt="Project Dataflow" src="https://github.com/user-attachments/assets/7b29a5f4-5bbd-48a2-be6d-724128b30af8" />
 </p>
 
 ---
@@ -84,7 +84,7 @@
 ### 3.2 Data Processing & Pipeline
 
 <p align="center">
-  <img width="90%" alt="Data Processing Flow" src="https://github.com/user-attachments/assets/7ada81c8-aaa7-4efa-a1f3-2f4ce27fd5c2" /><br>
+  <img width="85%" alt="Data Processing Flow" src="https://github.com/user-attachments/assets/7ada81c8-aaa7-4efa-a1f3-2f4ce27fd5c2" /><br>
   <b>[ Data Processing Flow ]</b>
 </p>
 
@@ -97,12 +97,12 @@
 ### 3.3 Speaker & Voice Output Flow
 
 <p align="center">
-  <img width="85%" alt="Speaker Flow" src="https://github.com/user-attachments/assets/236cac61-9e81-401f-8c5e-6536509ac82e" /><br>
+  <img width="80%" alt="Speaker Flow" src="https://github.com/user-attachments/assets/236cac61-9e81-401f-8c5e-6536509ac82e" /><br>
   <b>[ Speaker 동작 흐름 ]</b>
 </p>
 
 <p align="center">
-  <img width="90%" alt="Real-time Location Code" src="https://github.com/user-attachments/assets/1048448-de197f06-0af8-49d8-af35-63adf287b7f8" /><br>
+  <img width="85%" alt="Real-time Location Code" src="https://github.com/user-attachments/assets/de197f06-0af8-49d8-af35-63adf287b7f8" /><br>
   <b>[ 실시간 위치 인지 및 매핑 로직 ]</b>
 </p>
 
@@ -113,7 +113,7 @@
 * **사용 목적**: 다중 객체 탐지 후, 단순 객체명 나열이 아닌 보행자의 상황에 맞는 자연스러운 안내 문장 생성
 
 <p align="center">
-  <img width="85%" alt="Ollama Pipeline" src="https://github.com/user-attachments/assets/80f7d7d9-58a3-4758-9b91-9e314f928844" />
+  <img width="80%" alt="Ollama Pipeline" src="https://github.com/user-attachments/assets/80f7d7d9-58a3-4758-9b91-9e314f928844" />
 </p>
 
 - **객체 탐지 (YOLO)**: 사물의 종류 및 바운딩 박스 위치 파악
@@ -122,13 +122,14 @@
 
 ---
 
-## 4. Result
+## 📈 4. Result
 
 ### 4.1 Data 학습 및 검증 결과
 
-| Bounding Box & mAP50 | Training / Validation Loss |
-| :---: | :---: |
-| <img src="https://github.com/user-attachments/assets/6626e4e2-9720-4de2-ad52-a37ae2047f21" width="100%"/> | <img src="https://github.com/user-attachments/assets/2649516e-f2bb-4720-ba3e-6d6d24806762" width="100%"/> |
+<p align="center">
+  <img width="48%" alt="mAP50 Bounding Box" src="https://github.com/user-attachments/assets/6626e4e2-9720-4de2-ad52-a37ae2047f21" />
+  <img width="48%" alt="Training Validation Loss" src="https://github.com/user-attachments/assets/2649516e-f2bb-4720-ba3e-6d6d24806762" />
+</p>
 
 * Bounding Box가 정확하게 형성되었으며, mAP50 성능 수치 확보
 * Training 및 Validation Loss 그래프가 안정적으로 하강하며 오버피팅 없이 학습 완료
@@ -137,15 +138,19 @@
 
 ### 4.2 Real-Detection Examples
 
-| Bus Shelter & Manhole 탐지 | 야간 우천 시 신호등 탐지 | 저녁 도심 다중 객체 탐지 |
-| :---: | :---: | :---: |
-| <img src="https://github.com/user-attachments/assets/eb6140d1-7ca1-4a62-a355-9be0620ff928" width="100%"/> | <img src="https://github.com/user-attachments/assets/0387bdd9-c4cc-44d0-8145-c3951c4dc1f8" width="100%"/> | <img src="https://github.com/user-attachments/assets/50c55d92-f977-4f09-99d3-50d9efb1ef9a" width="100%"/> |
+<p align="center">
+  <img width="32%" alt="Bus Shelter & Manhole 탐지" src="https://github.com/user-attachments/assets/eb6140d1-7ca1-4a62-a355-9be0620ff928" />
+  <img width="32%" alt="야간 우천 시 신호등 탐지" src="https://github.com/user-attachments/assets/0387bdd9-c4cc-44d0-8145-c3951c4dc1f8" />
+  <img width="32%" alt="저녁 도심 다중 객체 탐지" src="https://github.com/user-attachments/assets/50c55d92-f977-4f09-99d3-50d9efb1ef9a" />
+</p>
 
 #### 4.2-1 Real Detection 환경 구동 세팅
 
-| Ollama 서비스 구동 | USB 스피커 연결 확인 | Bluetooth 스피커 페어링 |
-| :---: | :---: | :---: |
-| <img src="https://github.com/user-attachments/assets/9680c06e-c288-4fd9-b5bd-20792b11d8b9" width="100%"/> | <img src="https://github.com/user-attachments/assets/e2170063-ee47-4cc5-bd7f-70dafb55ecd2" width="100%"/> | <img src="https://github.com/user-attachments/assets/548154-b52b64c7-8203-45f7-8348-a8e52349f2b2" width="100%"/> |
+<p align="center">
+  <img width="32%" alt="Ollama On" src="https://github.com/user-attachments/assets/9680c06e-c288-4fd9-b5bd-20792b11d8b9" />
+  <img width="32%" alt="USB Speaker Connect" src="https://github.com/user-attachments/assets/e2170063-ee47-4cc5-bd7f-70dafb55ecd2" />
+  <img width="32%" alt="Bluetooth Speaker Connect" src="https://github.com/user-attachments/assets/b52b64c7-8203-45f7-8348-a8e52349f2b2" />
+</p>
 
 ---
 
@@ -154,9 +159,10 @@
 1. **사물 오인식 문제**: 유사 형태의 객체(예: 일반 표지판을 정지 표지판으로 잘못 인식)에 대한 오인식 사례 존재
 2. **지형 변화 인식 한계**: 오르막길, 내리막길 등 3차원 경사도 변화에 대한 미세한 판단 정확도 보완 필요
 
-| 표지판 오인식 사례 | 경사도(오르막/내리막) 인식 한계 |
-| :---: | :---: |
-| <img src="https://github.com/user-attachments/assets/402241-7810704d-c829-4b50-bfd6-a419fc7b1987" width="80%"/> | <img src="https://github.com/user-attachments/assets/559248-7cf21205-7d61-45cf-a49b-4a8fa01bf434" width="80%"/> |
+<p align="center">
+  <img width="45%" alt="표지판 오인식" src="https://github.com/user-attachments/assets/7810704d-c829-4b50-bfd6-a419fc7b1987" />
+  <img width="45%" alt="경사 인식 한계" src="https://github.com/user-attachments/assets/7cf21205-7d61-45cf-a49b-4a8fa01bf434" />
+</p>
 
 ---
 
@@ -166,8 +172,9 @@
 * **문제점**: 초기 모델인 `Gemma3:4b` 구동 시, 텍스트 생성까지 **약 5초 이상의 지연 시간**이 발생하여 실시간 보행 안내 시스템에 적용하기 어려움
 * **해결 방법**: 로컬 LLM 모델을 초경량화된 **`Qwen2:0.5b`**로 변경하여 추론속도 극대화
 
-| 코드 출력 비교 | 생성 속도 및 지연 시간 비교 |
-| :---: | :---: |
-| <img src="https://github.com/user-attachments/assets/645247-7e9fceac-e3b2-437d-a233-e53a30608f5b" width="100%"/> | <img src="https://github.com/user-attachments/assets/355170-c89b4df9-caaa-4c73-9e35-d881d5a1b0af" width="100%"/> |
+<p align="center">
+  <img width="50%" alt="코드 출력 비교" src="https://github.com/user-attachments/assets/7e9fceac-e3b2-437d-a233-e53a30608f5b" />
+  <img width="45%" alt="속도 및 지연시간 비교 표" src="https://github.com/user-attachments/assets/c89b4df9-caaa-4c73-9e35-d881d5a1b0af" />
+</p>
 
 * **결과**: 문장 생성 지연 시간을 수초 대에서 **실시간 대응이 가능한 수준으로 대폭 단축**하여 시각장애인 보행 환경에 적합한 빠른 피드백 체계 구축 완료
