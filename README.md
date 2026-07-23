@@ -1,4 +1,4 @@
-# 🦯 Intelligent Walking Navigation for the Visually Impaired
+# 🦯 Intelligent Navigation for the Visually Impaired
 
 > **시각장애인을 위한 딥러닝 기반 실시간 온디바이스 보행 보조 안내 시스템**  
 > Jetson Orin Nano 기반 다중 YOLO 객체 탐지, 로컬 LLM(Ollama) 상황 인지 및 실시간 TTS 음성 안내 시스템
@@ -161,6 +161,11 @@
 
 1. **사물 오인식 문제**: 유사 형태의 객체(예: 일반 표지판을 정지 표지판으로 잘못 인식)에 대한 오인식 사례 존재
 2. **지형 변화 인식 한계**: 오르막길, 내리막길 등 3차원 경사도 변화에 대한 미세한 판단 정확도 보완 필요
+
+---
+
+### 4.4 Demo Video
+
 
 ---
 
