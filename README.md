@@ -138,31 +138,29 @@
 
 ### 4.2 Real-Detection Examples
 
-<p align="center">
-  <img width="32%" alt="Bus Shelter & Manhole 탐지" src="https://github.com/user-attachments/assets/eb6140d1-7ca1-4a62-a355-9be0620ff928" />
-  <img width="32%" alt="야간 우천 시 신호등 탐지" src="https://github.com/user-attachments/assets/0387bdd9-c4cc-44d0-8145-c3951c4dc1f8" />
-  <img width="32%" alt="저녁 도심 다중 객체 탐지" src="https://github.com/user-attachments/assets/50c55d92-f977-4f09-99d3-50d9efb1ef9a" />
-</p>
+| Station Shelter & Manhole 탐지 | 비 오는 밤, 빨간 신호등 탐지 | 저녁 도심, 다중 위치 객체 탐지 |
+| :---: | :---: | :---: |
+| <img src="https://github.com/user-attachments/assets/eb6140d1-7ca1-4a62-a355-9be0620ff928" width="100%"/> | <img src="https://github.com/user-attachments/assets/0387bdd9-c4cc-44d0-8145-c3951c4dc1f8" width="100%"/> | <img src="https://github.com/user-attachments/assets/50c55d92-f977-4f09-99d3-50d9efb1ef9a" width="100%"/> |
+| **버스 정류장 및 맨홀 실시간 감지** | **야간/우천 시 신호등 상태 감지** | **복잡한 도심 환경 다중 객체 실시간 추적** |
 
-#### 4.2-1 Real Detection 환경 구동 세팅
+#### 4.2-1 Real Detection 필요 설정 사항
 
-<p align="center">
-  <img width="32%" alt="Ollama On" src="https://github.com/user-attachments/assets/9680c06e-c288-4fd9-b5bd-20792b11d8b9" />
-  <img width="32%" alt="USB Speaker Connect" src="https://github.com/user-attachments/assets/e2170063-ee47-4cc5-bd7f-70dafb55ecd2" />
-  <img width="32%" alt="Bluetooth Speaker Connect" src="https://github.com/user-attachments/assets/b52b64c7-8203-45f7-8348-a8e52349f2b2" />
-</p>
+| Ollama On (서버 구동) | USB Speaker Connect | Bluetooth Speaker Connect |
+| :---: | :---: | :---: |
+| <img src="https://github.com/user-attachments/assets/9680c06e-c288-4fd9-b5bd-20792b11d8b9" width="100%"/> | <img src="https://github.com/user-attachments/assets/e2170063-ee47-4cc5-bd7f-70dafb55ecd2" width="100%"/> | <img src="https://github.com/user-attachments/assets/b52b64c7-8203-45f7-8348-a8e52349f2b2" width="100%"/> |
+| **Ollama 서비스 백그라운드 구동** | **USB 오디오 포트 연결 확인** | **블루투스 오디오 디바이스 페어링** |
 
 ---
 
 ### 4.3 한계점 및 아쉬운 점
 
+| 표지판 오인식 사례 | 오르막길/내리막길 경사 판단 한계 |
+| :---: | :---: |
+| <img src="https://github.com/user-attachments/assets/7810704d-c829-4b50-bfd6-a419fc7b1987" width="100%"/> | <img src="https://github.com/user-attachments/assets/7cf21205-7d61-45cf-a49b-4a8fa01bf434" width="100%"/> |
+| **일반 표지판을 정지(STOP) 표지판으로 오인식** | **2D 카메라 프레임 특성상 지형 경사도 미세 구분 아쉬움** |
+
 1. **사물 오인식 문제**: 유사 형태의 객체(예: 일반 표지판을 정지 표지판으로 잘못 인식)에 대한 오인식 사례 존재
 2. **지형 변화 인식 한계**: 오르막길, 내리막길 등 3차원 경사도 변화에 대한 미세한 판단 정확도 보완 필요
-
-<p align="center">
-  <img width="45%" alt="표지판 오인식" src="https://github.com/user-attachments/assets/7810704d-c829-4b50-bfd6-a419fc7b1987" />
-  <img width="45%" alt="경사 인식 한계" src="https://github.com/user-attachments/assets/7cf21205-7d61-45cf-a49b-4a8fa01bf434" />
-</p>
 
 ---
 
@@ -172,9 +170,9 @@
 * **문제점**: 초기 모델인 `Gemma3:4b` 구동 시, 텍스트 생성까지 **약 5초 이상의 지연 시간**이 발생하여 실시간 보행 안내 시스템에 적용하기 어려움
 * **해결 방법**: 로컬 LLM 모델을 초경량화된 **`Qwen2:0.5b`**로 변경하여 추론속도 극대화
 
-<p align="center">
-  <img width="50%" alt="코드 출력 비교" src="https://github.com/user-attachments/assets/7e9fceac-e3b2-437d-a233-e53a30608f5b" />
-  <img width="45%" alt="속도 및 지연시간 비교 표" src="https://github.com/user-attachments/assets/c89b4df9-caaa-4c73-9e35-d881d5a1b0af" />
-</p>
+| 코드 출력 비교 | 생성 속도 및 지연 시간 비교 |
+| :---: | :---: |
+| <img src="https://github.com/user-attachments/assets/7e9fceac-e3b2-437d-a233-e53a30608f5b" width="100%"/> | <img src="https://github.com/user-attachments/assets/c89b4df9-caaa-4c73-9e35-d881d5a1b0af" width="100%"/> |
+| **LLM 모델 변경 후 출력 텍스트 비교** | **모델별 Response Time (Latency) 성능 수치 비교** |
 
 * **결과**: 문장 생성 지연 시간을 수초 대에서 **실시간 대응이 가능한 수준으로 대폭 단축**하여 시각장애인 보행 환경에 적합한 빠른 피드백 체계 구축 완료
