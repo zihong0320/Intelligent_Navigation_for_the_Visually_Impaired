@@ -173,6 +173,6 @@
 | 코드 출력 비교 | 생성 속도 및 지연 시간 비교 |
 | :---: | :---: |
 | <img src="https://github.com/user-attachments/assets/7e9fceac-e3b2-437d-a233-e53a30608f5b" width="100%"/> | <img src="https://github.com/user-attachments/assets/c89b4df9-caaa-4c73-9e35-d881d5a1b0af" width="100%"/> |
-| **LLM 모델 변경 후 출력 텍스트 비교** | **모델별 Response Time (Latency) 성능 수치 비교** |
+| LLM 모델 변경 후 출력 텍스트 비교 | 모델별 Response Time (Latency) 성능 수치 비교 |
 
 * **결과**: 문장 생성 지연 시간을 수초 대에서 **실시간 대응이 가능한 수준으로 대폭 단축**하여 시각장애인 보행 환경에 적합한 빠른 피드백 체계 구축 완료
