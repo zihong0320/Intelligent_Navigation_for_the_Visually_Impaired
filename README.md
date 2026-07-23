@@ -141,7 +141,7 @@
 | Station Shelter & Manhole 탐지 | 비 오는 밤, 빨간 신호등 탐지 | 저녁 도심, 다중 위치 객체 탐지 |
 | :---: | :---: | :---: |
 | <img src="https://github.com/user-attachments/assets/eb6140d1-7ca1-4a62-a355-9be0620ff928" width="100%"/> | <img src="https://github.com/user-attachments/assets/0387bdd9-c4cc-44d0-8145-c3951c4dc1f8" width="100%"/> | <img src="https://github.com/user-attachments/assets/50c55d92-f977-4f09-99d3-50d9efb1ef9a" width="100%"/> |
-| **버스 정류장 및 맨홀 실시간 감지** | **야간/우천 시 신호등 상태 감지** | **복잡한 도심 환경 다중 객체 실시간 추적** |
+| **버스 정류장 및 맨홀 실시간 감지** | **야간/우천 시 신호등 상태 감지** | **왼쪽/정면/오른쪽 객체들 탐지** |
 
 #### 4.2-1 Real Detection 필요 설정 사항
 
