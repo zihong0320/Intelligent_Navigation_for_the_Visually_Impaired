@@ -76,7 +76,7 @@
 ### 3.1 Project Dataflow
 
 <p align="center">
-  <img width="85%" alt="Project Dataflow" src="https://github.com/user-attachments/assets/7b29a5f4-5bbd-48a2-be6d-724128b30af8" />
+  <img width="70%" alt="Project Dataflow" src="https://github.com/user-attachments/assets/7b29a5f4-5bbd-48a2-be6d-724128b30af8" />
 </p>
 
 ---
@@ -84,7 +84,7 @@
 ### 3.2 Data Processing & Pipeline
 
 <p align="center">
-  <img width="85%" alt="Data Processing Flow" src="https://github.com/user-attachments/assets/7ada81c8-aaa7-4efa-a1f3-2f4ce27fd5c2" /><br>
+  <img width="70%" alt="Data Processing Flow" src="https://github.com/user-attachments/assets/7ada81c8-aaa7-4efa-a1f3-2f4ce27fd5c2" /><br>
   <b>[ Data Processing Flow ]</b>
 </p>
 
@@ -97,12 +97,12 @@
 ### 3.3 Speaker & Voice Output Flow
 
 <p align="center">
-  <img width="80%" alt="Speaker Flow" src="https://github.com/user-attachments/assets/236cac61-9e81-401f-8c5e-6536509ac82e" /><br>
+  <img width="65%" alt="Speaker Flow" src="https://github.com/user-attachments/assets/236cac61-9e81-401f-8c5e-6536509ac82e" /><br>
   <b>[ Speaker 동작 흐름 ]</b>
 </p>
 
 <p align="center">
-  <img width="85%" alt="Real-time Location Code" src="https://github.com/user-attachments/assets/de197f06-0af8-49d8-af35-63adf287b7f8" /><br>
+  <img width="65%" alt="Real-time Location Code" src="https://github.com/user-attachments/assets/de197f06-0af8-49d8-af35-63adf287b7f8" /><br>
   <b>[ 실시간 위치 인지 및 매핑 로직 ]</b>
 </p>
 
@@ -113,7 +113,7 @@
 * **사용 목적**: 다중 객체 탐지 후, 단순 객체명 나열이 아닌 보행자의 상황에 맞는 자연스러운 안내 문장 생성
 
 <p align="center">
-  <img width="80%" alt="Ollama Pipeline" src="https://github.com/user-attachments/assets/80f7d7d9-58a3-4758-9b91-9e314f928844" />
+  <img width="75%" alt="Ollama Pipeline" src="https://github.com/user-attachments/assets/80f7d7d9-58a3-4758-9b91-9e314f928844" />
 </p>
 
 - **객체 탐지 (YOLO)**: 사물의 종류 및 바운딩 박스 위치 파악
